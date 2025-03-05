@@ -32,9 +32,9 @@
 
 ## 實作結果：
 
---**註冊介面** ：
+--**註冊介面(Register)** ：
 ![image](./Picture/Register.png)
---**實用介面** ：
+--**實用介面(Inference)** ：
 ![image](./Picture/Inference.png)
 
 ## 引文(Citation)：
