@@ -12,13 +12,14 @@
 
 ## 環境 (Requirements)
 * Ubuntu 24.01 LTS
+* Docker
 * Python 3.10
 
 ## (程式)資歷夾中具以下兩種資料夾 ：
-- 數位訊號處理(speech_enhancement)  :  通過數位訊號處理提高語音訊號的清晰度和質量，確保語音資料的準確性和可用性。
-- 語者辨識(speaker_recognition)  : (語者註冊、語者辨識),開發能夠準確辨識不同語者的技術，以提高系統的安全性和個性化服務能力。
-- 語音辨識(automatic_speech_recogni)  : (聲音轉文字),利用深度學習技術訓練語音辨識模型，並不斷優化模型參數以提高辨識精度。
-- 自然語言處理(text_generation, LLM)  : (文字生成並回復),結合語音與文本的多樣形態進行學習，提升系統的綜合理解能力。
+- 數位訊號處理(speech_enhancement)      :  通過數位訊號處理提高語音訊號的清晰度和質量，確保語音資料的準確性和可用性。
+- 語者辨識(speaker_recognition)        : (語者註冊、語者辨識),開發能夠準確辨識不同語者的技術，以提高系統的安全性和個性化服務能力。
+- 語音辨識(automatic_speech_recogni)   : (聲音轉文字),利用深度學習技術訓練語音辨識模型，並不斷優化模型參數以提高辨識精度。
+- 自然語言處理(text_generation, LLM)   : (文字生成並回復),結合語音與文本的多樣形態進行學習，提升系統的綜合理解能力。
 - 語音合成(text_to_speech)  : (文字轉聲音),研發高品質的語音合成技術，使語音助理能夠生成自然流暢的語音回應。
   
 
@@ -32,19 +33,10 @@
 - **object_detect.py**                        ：  座標轉換程式(點擊螢幕版本)。
 
 ### 2. 音檔 ：
-- **ball.mp3**  ：  尋問使用者是否要進行夾取物件(球)。
-- **bottle.mp3**：  尋問使用者是否要進行夾取物件(寶特瓶)。
-- **cup.mp3**   ：  尋問使用者是否要進行夾取物件(杯子)。
-- **no.mp3**    ：  回應取消物件夾取的語音。
-- **yes.mp3**   ：  回應協作型機器手臂將要開始夾取的語音。
-- **ok.mp3**    ：  回應[好的]。
+
   
 ## 操作流程：
-1. 開啟兩個terminal，分別進入launch及ros_robotarm_objdetect資料夾，輸入以下指令：roslaunch Arm_camera_start.launch 及 source Multi-execute.sh。
 
-2. 語音輸入的語音具備**七項功能**：球、杯子、瓶子、放開、抓住、放回去、離開。
-
-3. 當使用者說出要夾取的物件名稱後，系統會再次詢問此物件，需再次回應語音：是、不是。
 
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
