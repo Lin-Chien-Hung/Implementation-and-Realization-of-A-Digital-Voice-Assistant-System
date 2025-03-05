@@ -4,18 +4,21 @@
 * Author : Chien-Hung Lin
 
 ## 摘要 (Abstract)
-長照體系為目前重要的產業之一。隨著高齡化社會的逐步邁進，可觀察出全世界年長者人口逐年增加的跡象。因此對於未來的長照體系將會被受考驗，尤其於老人及病患照顧上更為明顯。而近年來隨著機器手臂快速蓬勃發展下，智慧化社會已經開始逐步成形，機器手臂不只應用於工業製造上，於照護部分也開始投入應用，其目的為減輕照護壓力與提升患者自主能力，同時提高患者的活動意願，為將來人力照護不足的窘境提供一個解決方案。本專題以此為主題，完成一套協作機器手臂抓取物件流程實作，硬體部分整合深度相機、協作機器手臂、麥克風以及人工智慧邊緣計算設備，軟體部分整合電腦視覺技術、深度學習以及機器人作業系統。完成系統實作後，經實驗證實，實作的系統能正確完成抓取。
+隨著語音應用的快速發展，人工智慧語音助理於各種應用場景中扮演著至關重要的角色。不僅被廣泛運用於智慧家居控制，更能讓用戶透過語音指令輕鬆掌控家居設備，還延伸至行車助手、語音搜索和問答、會議安排、醫療輔助、教育、客戶服務等多個領域。本論文的目標在於實作邊緣運算之人工智慧語音助理系統，包含五個主要模組：數位語音處理、語者身分識別、語音辨識、自然語意理解/文本生成，以及語音合成輸出。
+數位語音處理模組位於系統前端，其目的是對輸入語音進行增強處理。語者辨識模組賦予語音助理系統識別註冊語者聲音的能力，僅對註冊語者提供服務，避免冒充者和欺騙攻擊。語音辨識模組將使用者的聲音資訊轉換為文字。自然語言處理模組基於文字序列實現對語義的理解，透過自然語言生成技術提供適當的回應與行動。最後的語音合成模組使語音助理能夠將文字轉換為自然、有效的語音互動形式。
+首先，於本論文中將對每項模組進行獨立最佳化訓練。隨後，將這五項經過訓練的模組按序整合成一個端對端的模型。於整合過程中，目標是在邊緣運算的情境下，系統在效能和複雜度之間取得平衡，以達到最佳效果。將系統效能指標定義為自然言語文本生成的準確性，而系統複雜度包含模型大小、運算時間等因素。
 
 ## 環境 (Requirements)
-* Robot Operation System (ROS_1)
-* Python 2.7
+* Ubuntu 24.01 LTS
+* Python 3.10
 
 ## (程式)資歷夾中具以下兩種資料夾 ：
-- launch
-- ros_robotarm_objdetect
+- 數位訊號處理(speech_enhancement)  :  通過數位訊號處理提高語音訊號的清晰度和質量，確保語音資料的準確性和可用性。
+- 語者辨識(speaker_recognition)  : (語者註冊、語者辨識),開發能夠準確辨識不同語者的技術，以提高系統的安全性和個性化服務能力。
+- 語音辨識(automatic_speech_recogni)  : (聲音轉文字),利用深度學習技術訓練語音辨識模型，並不斷優化模型參數以提高辨識精度。
+- 自然語言處理(text_generation, LLM)  : (文字生成並回復),結合語音與文本的多樣形態進行學習，提升系統的綜合理解能力。
+- 語音合成(text_to_speech)  : (文字轉聲音),研發高品質的語音合成技術，使語音助理能夠生成自然流暢的語音回應。
   
-## (launch)資歷夾中具以下檔案 ：
-- **Arm_camera_start.launch** ： 用來啟動各個軟、硬體的程式，其中硬體包括(協作型機器手臂、Intel realsense D435i)，軟體包括(Darknet_ROS)。
 
 ## (ros_robotarm_objdetect)資歷夾中具以下檔案 ：
 ### 1. 程式 ：
@@ -45,8 +48,7 @@
 Please cite the following if you make use of the code.
 
 >@inproceedings{kye2020meta,
-  title={Preliminary Implementation of Grasping Operation by a Collaborative Robot Arm: Using a Ball as Example},
-  author={Wen-Chang Cheng,Chien-Hung Lin, Cheng-Yi Shi,Hung-Chou Hsiao,Chun-Lung Chang},
-  booktitle={TAAI},
-  year={2021}
+  title={Implementation-and-Realization-of-A-Digital-Voice-Assistant-System},
+  author={Chien-Hung Lin},
+  year={2024}
 }
