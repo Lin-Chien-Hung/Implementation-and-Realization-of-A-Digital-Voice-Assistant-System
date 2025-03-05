@@ -30,6 +30,12 @@
   
 ## 操作流程：
 
+## 實作結果：
+
+--**註冊介面** ：
+![image](./Picture/Register.png)
+--**實用介面** ：
+![image](./Picture/Interface.png)
 
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
