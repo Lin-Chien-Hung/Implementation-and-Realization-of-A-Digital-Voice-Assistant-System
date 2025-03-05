@@ -14,11 +14,11 @@
 * Python 3.10
 
 ## 功能 (Feature)：
-- **數位訊號處理(Speech_Enhancement)^(*1)**   ： 基於 Facebook Demucs 實現噪音去除，透過添加 SNR 機制，判斷回傳值為何。
-- **語者辨識(Speaker_Recognition)** ： 基於 Meta-learning 使用 Resnet、Resnest 進行模型上的訓練，區分出不同說話者(註冊語者、非註冊語者、欺騙攻擊)。
-- **語音辨識(Automatic_Speech_Recogni)** ： 基於 OpenAI Whisper 實現，透過使用更多語料(Aishell-2、Aishell-3)來去進行微調，實現聲音轉文字。
-- **自然語言處理(Text_generation, LLM)** ： 基於 Meta Llama 2，透過設定合適的 Prompt 實現文本生成。
-- **語音合成(Text_To_Speech)** ： 基於 XTTS，透過使用更多語料(Common_voice)來去進行微調，實現自然語音的輸出。
+- **數位訊號處理(Speech_Enhancement)**   ： 基於 Facebook Demucs 實現噪音去除，透過添加 SNR 機制，判斷回傳值為何。<code : speech_enhancement>
+- **語者辨識(Speaker_Recognition)** ： 基於 Meta-learning 使用 Resnet、Resnest 進行模型上的訓練，區分出不同說話者(註冊語者、非註冊語者、欺騙攻擊)。<code : speaker_recognition>
+- **語音辨識(Automatic_Speech_Recogni)** ： 基於 OpenAI Whisper 實現，透過使用更多語料(Aishell-2、Aishell-3)來去進行微調，實現聲音轉文字。<code : automatic_speech_recogni>
+- **自然語言處理(Text_generation, LLM)** ： 基於 Meta Llama 2，透過設定合適的 Prompt 實現文本生成。<code : text_generation>
+- **語音合成(Text_To_Speech)** ： 基於 XTTS，透過使用更多語料(Common_voice)來去進行微調，實現自然語音的輸出。<code : text_to_speech>
   
 ## 程式 (code) ：
 - **main.py**                ：
