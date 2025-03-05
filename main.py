@@ -217,6 +217,7 @@ def main():
 
                         with gr.Column():
                             register_btn = gr.Button("Submit", variant="primary")
+                            
                     register_btn.click(
                         # ================做音檔的預先處理(多轉單、下採樣)================
                         fn=preprocess, inputs=register_audio, outputs=register_audio
