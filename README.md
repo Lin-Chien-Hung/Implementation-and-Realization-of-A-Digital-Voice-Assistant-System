@@ -14,24 +14,19 @@
 * Python 3.10
 
 ## 功能 (Feature)：
-- 數位訊號處理(speech_enhancement) : 基於 Facebook Demucs 實現噪音去除，透過添加 SNR 機制，判斷回傳值為何。
-- 語者辨識(speaker_recognition) : 基於 Meta-learning 使用 Resnet、Resnest 進行模型上的訓練，區分出不同說話者(註冊語者、非註冊語者、欺騙攻擊)。
-- 語音辨識(automatic_speech_recogni) : 基於 OpenAI Whisper 實現，透過使用更多語料(Aishell-2、Aishell-3)來去進行微調，實現聲音轉文字。
-- 自然語言處理(text_generation, LLM) : 基於 Meta Llama 2，透過設定合適的 Prompt 實現文本生成。
-- 語音合成(text_to_speech) : 基於 XTTS，透過使用更多語料(Common_voice)來去進行微調，實現自然語音的輸出。
+- **數位訊號處理(Speech_Enhancement)**   ： 基於 Facebook Demucs 實現噪音去除，透過添加 SNR 機制，判斷回傳值為何。
+- **語者辨識(Speaker_Recognition)** ： 基於 Meta-learning 使用 Resnet、Resnest 進行模型上的訓練，區分出不同說話者(註冊語者、非註冊語者、欺騙攻擊)。
+- **語音辨識(Automatic_Speech_Recogni)** ： 基於 OpenAI Whisper 實現，透過使用更多語料(Aishell-2、Aishell-3)來去進行微調，實現聲音轉文字。
+- **自然語言處理(Text_generation, LLM)** ： 基於 Meta Llama 2，透過設定合適的 Prompt 實現文本生成。
+- **語音合成(Text_To_Speech)** ： 基於 XTTS，透過使用更多語料(Common_voice)來去進行微調，實現自然語音的輸出。
   
-
-## (ros_robotarm_objdetect)資歷夾中具以下檔案 ：
-### 1. 程式 ：
-- **Multi-execute.sh**                        ：  啟動下列程式碼，此程式中具備兩種模式，(1)test為確認相機視角是否正確，(2)voice為本專題的主體使用模式，因此使用者須自行編輯程式碼來添加、去除註解字元(#)。
-- **pose_action_client_finger_cartesian.py**  ：  驅動協作型機器手臂程式。
-- **voice_detect.py**                         ：  偵測語音程式。
-- **voice_object_detect.py**                  ：  座標轉換程式(語音辨識版本)。
-- **camera_tf_broadcaster.py**                ：  定義相對座標程式。
-- **object_detect.py**                        ：  座標轉換程式(點擊螢幕版本)。
-
-### 2. 音檔 ：
-
+## 程式 (code) ：
+- **main.py**                ：
+- **configure.py**           ：
+- **final_v1.py**            ：  
+- **feature_extraction.py**  ：  
+- **cert.pem**               ：  
+- **key.pem**                ：  
   
 ## 操作流程：
 
