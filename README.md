@@ -40,7 +40,7 @@
 ## 引文(Citation)：
 Please cite the following if you make use of the code.
 
->@inproceedings{kye2020meta,
+>@inproceedings{kye2024meta,
   title={Implementation-and-Realization-of-A-Digital-Voice-Assistant-System},
   author={Chien-Hung Lin},
   year={2024}
